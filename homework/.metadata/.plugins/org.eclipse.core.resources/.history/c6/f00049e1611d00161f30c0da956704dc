@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+<head>
+	<script src="/js/angular.min.js"></script>
+</head>
+<body ng-app>
+	<div>
+	{{ 40 + 50 }}
+	</div>
+</body>
+</html>

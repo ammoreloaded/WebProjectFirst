@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app="myModule">
+<head>
+<script src="resources/js/angular.min.js"></script>
+<script src="resources/js/filterDemo.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body ng-controller="myController">
+	<div>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Gender</th>
+					<th>Salary</th>
+					<th>Salary</th>
+					<th>Date of birth</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="employee in employees">
+					<td>{{ employee.name | uppercase}}</td>
+					<td>{{ employee.gender | lowercase }}</td>
+					<td>{{ employee.salary }}</td>
+					<td>{{ employee.salary }}</td>
+					<td>{{ employee.dateOfBirth | date : "dd/MM/yyyy" }}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+
+var myApp = angular.module("myModule", []).controller("myController", function($scope){
+	
+	$scope.message = "Angular Binding Demo";
+});
+//Simpler way of creating a module and attaching a controller
+//var myApp = angular.module("myModule", []);
+
+
+/*myApp.controller("myController", function($scope) {
+
+	$scope.message = "Angular JS Tutorial";
+	$scope.employee = employee;
+
+});*/

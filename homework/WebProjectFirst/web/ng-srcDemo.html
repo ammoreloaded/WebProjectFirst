@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="myModule">
+<head>
+	<script src = "resources/js/angular.min.js"></script>
+	<script src = "resources/js/script.js"></script>
+</head>
+<body ng-controller="myController">
+	<div>
+		Name : {{ user.name }}
+	</div>
+	<div>
+		Country : {{ user.country }}
+	</div>
+	<div>
+		Work : {{ user.work }}
+	</div>	
+	<div>
+		{{ 40 + 50 }}</br>
+		<img alt="{{ user.name + ' Image'}}" ng-src="{{ user.image }}" width="300px"/>
+	</div>
+	
+</body>
+</html>

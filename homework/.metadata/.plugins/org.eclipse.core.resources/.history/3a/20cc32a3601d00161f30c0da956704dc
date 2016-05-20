@@ -1,0 +1,19 @@
+var myApp = angular.module("myModule", []).controller("myController",
+		function($scope) {
+			$scope.message = "Angular JS Tutorial";
+			$scope.employee = employee;
+		});
+
+var myApp = angular.module("myModule", []);
+var employee = {
+	firstName : "Ankit",
+	lastName : "Singh",
+	age : "23"
+};
+
+myApp.controller("myController", function($scope) {
+
+	$scope.message = "Angular JS Tutorial";
+	$scope.employee = employee;
+
+});

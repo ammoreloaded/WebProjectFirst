@@ -1,0 +1,10 @@
+
+var technology = [
+                 {name : "JAVA", likes : "0", dislikes : "0"},
+                 {name : "Servlet", likes : "0", dislikes : "0"},
+                 {name : "JSP", likes : "0", dislikes : "0"}
+                 ];
+
+var myApp = angular.module("myModule", []).controller("myController", function($scope){
+	$scope.technology = technology;
+});

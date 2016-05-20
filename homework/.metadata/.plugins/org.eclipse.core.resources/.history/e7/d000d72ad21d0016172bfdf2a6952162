@@ -1,0 +1,19 @@
+
+var employees = [
+                 {name : "Ankit", gender : "Male", age : 23, salary : 25000},
+                 {name : "Ramesh", gender : "Male", age : 30, salary : 100000},
+                 {name : "Sunil", gender : "Male", age : 28, salary : 70000},
+                 {name : "Nikita", gender : "Female", age : 24, salary : 35000}
+                 ];
+
+var myApp = angular.module("myModule", []).controller("myController", function($scope){
+	$scope.employees = employees;
+	
+	$scope.incrLikes = function(technology){
+		technology.likes++;
+	};
+	
+	$scope.incrDislikes = function(technology){
+		technology.dislikes++;
+	};
+});

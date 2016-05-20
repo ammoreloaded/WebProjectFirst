@@ -1,0 +1,19 @@
+
+var employees = [
+                 {name : "Ankit", gender : 0, age : 0, salary : 55000},
+                 {gender : "Servlet", likes : 0, dislikes : 0},
+                 {age : "JSP", likes : 0, dislikes : 0},
+                 {salary : "AngularJs", likes : 0, dislikes : 0}
+                 ];
+
+var myApp = angular.module("myModule", []).controller("myController", function($scope){
+	$scope.technologies = technologies;
+	
+	$scope.incrLikes = function(technology){
+		technology.likes++;
+	};
+	
+	$scope.incrDislikes = function(technology){
+		technology.dislikes++;
+	};
+});

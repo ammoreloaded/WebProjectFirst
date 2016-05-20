@@ -1,0 +1,20 @@
+
+var employees = [
+                 {name : "Ankit", gender : "Male", age : 23, salary : 25000, dateOfBirth : new Date("August 1, 1992")},
+                 {name : "Ramesh", gender : "Male", age : 30, salary : 100000, dateOfBirth : new Date("July 23, 1985")},
+                 {name : "Sunil", gender : "Male", age : 28, salary : 70000, dateOfBirth : new Date("January 15, 1988")},
+                 {name : "Nikita", gender : "Female", age : 24, salary : 35000, dateOfBirth : new Date("November 6, 1991")}
+                 ];
+
+var myApp = angular.module("myModule", []).controller("myController", function($scope){
+	$scope.employees = employees;
+	$scope.rowLimit = 3;
+	
+	$scope.incrLikes = function(technology){
+		technology.likes++;
+	};
+	
+	$scope.incrDislikes = function(technology){
+		technology.dislikes++;
+	};
+});
